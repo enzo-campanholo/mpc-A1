@@ -19,11 +19,12 @@
 
 #let coluna-rotulos = 2cm
 
+// A numeração fica na margem, sem deslocar a coluna de texto.
 #let colunas(esquerda, direita) = grid(
-  columns: (coluna-rotulos, 1fr),
+  columns: (0pt, 1fr),
   align: (right + top, left + top),
-  column-gutter: 0.7em,
-  esquerda, direita,
+  column-gutter: 0pt,
+  move(dx: -0.3cm, esquerda), direita,
 )
 
 #let rotulo(corpo) = text(size: 8pt, fill: suave, tracking: 0.11em)[#upper(

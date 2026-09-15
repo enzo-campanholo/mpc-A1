@@ -1,8 +1,10 @@
 # Levantamento bibliográfico
 
-Palavras-chave, strings de busca e referências comentadas em Typst.
+Palavras-chave, strings de busca e referências comentadas.
 
 [Abrir o PDF](levantamento-bibliografico.pdf)
+
+[PDFs dos artigos citados](artigos/)
 
 ## Compilar
 
