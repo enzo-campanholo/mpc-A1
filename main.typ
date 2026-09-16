@@ -157,12 +157,15 @@
   #colunas(
     [],
     grid(
-      columns: 1,
+      columns: (1fr, 1fr),
+      column-gutter: 1.2em,
       row-gutter: 0.7em,
-      ..palavras-chave.map(termo => text(size: 11.5pt)[#termo]),
+      ..palavras-chave.map(termo => text(size: 10.5pt, lang: "en")[#termo]),
     ),
   )
 ]
+
+#pagebreak(weak: true)
 
 = Strings de busca
 
@@ -176,7 +179,7 @@
       [#v(7pt) #numero(n)],
       block(width: 100%, fill: painel, radius: 2pt, inset: (x: 10pt, y: 8pt))[
         #set par(justify: false, leading: 0.85em)
-        #text(font: mono, size: 8.8pt)[#s]
+        #text(font: mono, size: 8.8pt, hyphenate: false)[#s]
       ],
     )
   ]
@@ -187,7 +190,7 @@
 = Referências comentadas
 
 #let justificativa-de(j) = block(above: 0.95em, width: 100%)[
-  #set par(justify: true, leading: 0.74em)
+  #set par(justify: true, leading: 0.65em)
   #text(size: 10pt)[
     #rotulo("Justificativa") #h(0.6em)
     #if j == none or j == [] {
@@ -206,12 +209,12 @@
       tema-atual = tema
     }
 
-    block(width: 100%, above: 1.5em, below: 1.5em)[
+    block(width: 100%, above: 1.1em, below: 1.1em, breakable: false)[
       #colunas(
         [#v(0.6pt) #numero(n)],
         [
           #block(breakable: false, sticky: true)[
-            #set par(justify: false, leading: 0.72em)
+            #set par(justify: false, leading: 0.65em)
             #text(size: 10.5pt, hyphenate: false)[#cite(
               label(e.chave),
               form: "full",

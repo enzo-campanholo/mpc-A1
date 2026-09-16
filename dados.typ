@@ -14,11 +14,7 @@
   ano: 2026,
 )
 
-#let apresentacao = [
-  Este documento registra as palavras-chave e as strings de busca empregadas no
-  levantamento bibliográfico e as referências dele resultantes, cada uma
-  acompanhada da justificativa de sua relevância para o trabalho.
-]
+#let apresentacao = none
 
 #let nota-palavras = none
 

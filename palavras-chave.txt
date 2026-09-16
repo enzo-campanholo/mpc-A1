@@ -1,3 +1,27 @@
-Palavra-chave 1
-Palavra-chave 2
-Palavra-chave 3
+Instruction set architecture (ISA)
+Formal semantics
+Operational semantics
+Executable specifications
+Specification validation
+Formal verification
+Theorem proving
+Coq, HOL4, Isabelle
+Sail, L3, ASL
+Machine code verification
+Separation logic, Iris
+Instruction set simulation
+CPU emulation
+Architecture description languages
+Dynamic binary translation
+Just-in-time compilation
+Meta-tracing
+Compiler verification
+Semantic preservation
+Functional programming
+Differential testing
+Fuzzing
+Automatic test generation
+Property-based testing
+Test-case reduction
+Delta debugging
+Test oracles

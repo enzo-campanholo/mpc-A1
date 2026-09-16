@@ -30,5 +30,7 @@ sua chave em `entradas.typ`.
 
 Para converter RIS em BibTeX, use `./ris2bib.sh artigo.ris` (requer bibutils ou Nix).
 
+## Estilo de referências e ABNT
+
 O estilo `abnt.csl` vem do [ABNTyp](https://github.com/3sdras/abntyp).
 Licença: [abnt.LICENSE](abnt.LICENSE).

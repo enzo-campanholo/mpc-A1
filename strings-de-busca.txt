@@ -3,3 +3,12 @@
 "architecture description language" OR ADL
 Sail AND ISA
 "formal verification" OR "formal methods"
+("instruction set architecture" OR ISA) AND ("formal specification" OR semantics) AND (L3 OR Sail OR ASL)
+(Sail OR "authoritative ISA") AND (Coq OR Iris) AND "machine code"
+x86 AND (executable OR formal) AND ISA AND (simulator OR semantics)
+("8-bit" OR microcontroller OR Z80 OR 6502 OR 8080 OR 8051 OR "MCS-51") AND (Coq OR Isabelle OR HOL4 OR Matita) AND verification
+("CPU emulator" OR "instruction set simulator") AND ("differential testing" OR "test generation")
+("instruction set simulator") AND ("architecture description" OR generat*) AND (fast OR JIT)
+(processor OR CPU) AND "differential fuzzing" AND RTL
+("test-case reduction" OR "delta debugging") AND (compiler OR program)
+("Game Boy" OR SM83) AND (formal OR verification OR "differential testing")

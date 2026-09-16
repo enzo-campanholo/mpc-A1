@@ -4,6 +4,9 @@
     ABNT NBR 6023:2018 / NBR 10520:2023 - Estilo autor-data
 
     Adaptado para o pacote ABNTyp
+    Ajustes locais: usar editores como substitutos, não como coautores;
+    omitir dados de evento quando o nome do evento não está disponível;
+    manter o título dos anais no grupo introduzido por “In:”.
     Licença: MIT
 
     Baseado no trabalho original de:
@@ -101,7 +104,7 @@
   </macro>
   <macro name="author">
     <group delimiter=". ">
-      <names variable="author editor collection-editor editorial-director" delimiter="; ">
+      <names variable="author" delimiter="; ">
         <name delimiter="; " delimiter-precedes-last="always" et-al-min="7" et-al-use-first="1" initialize="false" initialize-with=". " name-as-sort-order="all">
           <name-part name="family" text-case="uppercase"/>
           <name-part name="given"/>
@@ -109,6 +112,9 @@
         <et-al font-style="normal"/>
         <label form="short" plural="never" prefix=" (" suffix=".)"/>
         <substitute>
+          <names variable="editor"/>
+          <names variable="collection-editor"/>
+          <names variable="editorial-director"/>
           <names variable="translator"/>
           <text macro="title"/>
         </substitute>
@@ -652,10 +658,14 @@
               <group delimiter=". ">
                 <text macro="container-contributors" text-case="uppercase"/>
                 <text macro="secondary-contributors"/>
-                <text macro="event"/>
+                <choose>
+                  <if variable="event">
+                    <text macro="event"/>
+                  </if>
+                </choose>
+                <text macro="container-title" text-case="uppercase"/>
               </group>
             </group>
-            <text macro="container-title" text-case="uppercase"/>
             <text macro="place+publisher+date"/>
             <text macro="physical-description"/>
             <text variable="note"/>
