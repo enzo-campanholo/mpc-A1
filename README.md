@@ -4,6 +4,8 @@ Palavras-chave, strings de busca e referências comentadas.
 
 [Abrir o PDF](levantamento-bibliografico.pdf)
 
+[Projeto parcial](projeto-parcial.pdf)
+
 [PDFs dos artigos citados](artigos/)
 
 ## Compilar
